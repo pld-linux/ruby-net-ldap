@@ -1,11 +1,12 @@
 %define tarname net-ldap
 Summary:	LDAP module for Ruby
+Summary(pl):	Modu³ LDAP dla jêzyka Ruby
 Name:		ruby-net-ldap
 Version:	0.0.4
 Release:	1
 License:	GPL
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/12430/ruby-net-ldap-0.0.4.tar.gz
+Source0:	http://rubyforge.org/frs/download.php/12430/%{name}-%{version}.tar.gz
 # Source0-md5:	99822b93260f88bd85f357a004d687a2
 URL:		http://rubyforge.org/projects/net-ldap/
 BuildRequires:	rpmbuild(macros) >= 1.277
@@ -16,6 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 LDAP module for Ruby.
+
+%description -l pl
+Modu³ LDAP dla jêzyka Ruby.
 
 %prep
 %setup -q
