@@ -1,6 +1,6 @@
 %define tarname net-ldap
 Summary:	LDAP module for Ruby
-Summary(pl):	Modu³ LDAP dla jêzyka Ruby
+Summary(pl.UTF-8):   ModuÅ‚ LDAP dla jÄ™zyka Ruby
 Name:		ruby-net-ldap
 Version:	0.0.4
 Release:	1
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 LDAP module for Ruby.
 
-%description -l pl
-Modu³ LDAP dla jêzyka Ruby.
+%description -l pl.UTF-8
+ModuÅ‚ LDAP dla jÄ™zyka Ruby.
 
 %prep
 %setup -q
