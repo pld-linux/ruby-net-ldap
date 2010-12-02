@@ -3,7 +3,7 @@ Summary:	LDAP module for Ruby
 Summary(pl.UTF-8):	Moduł LDAP dla języka Ruby
 Name:		ruby-%{pkgname}
 Version:	0.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
