@@ -2,15 +2,15 @@
 Summary:	LDAP module for Ruby
 Summary(pl.UTF-8):	Moduł LDAP dla języka Ruby
 Name:		ruby-%{pkgname}
-Version:	0.0.5
+Version:	0.1.1
 Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	78bbdf644088f17878bdde0bd96d4a14
+# Source0-md5:	9df57177e5f51fc5e15956371d57e307
 URL:		http://rubyforge.org/projects/net-ldap/
 BuildRequires:	rpmbuild(macros) >= 1.484
-BuildRequires:	ruby >= 1:1.8.6
+BuildRequires:	ruby >= 1:1.9
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -71,6 +71,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README*
+%{ruby_rubylibdir}/net-ldap.rb
 %{ruby_rubylibdir}/net/*
 
 %files rdoc
