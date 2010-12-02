@@ -54,7 +54,7 @@ find -newer README.txt -o -print | xargs touch --reference %{SOURCE0}
 rdoc --ri --op ri lib
 rdoc --op rdoc lib
 rm -r ri/{Array,Bignum,FalseClass,Fixnum,IO,OpenSSL,String,StringIO,TrueClass} \
-	ri/Net/{SNMP,SnmpPdu,*.yaml}
+	ri/Net/{SNMP,SnmpPdu}
 rm ri/created.rid
 
 %install
