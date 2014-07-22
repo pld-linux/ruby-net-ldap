@@ -3,7 +3,7 @@ Summary:	LDAP module for Ruby
 Summary(pl.UTF-8):	Moduł LDAP dla języka Ruby
 Name:		ruby-%{pkgname}
 Version:	0.3.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		Development/Languages
 Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
@@ -52,6 +52,7 @@ Dokumentacji w formacie ri dla %{pkgname}.
 rdoc --ri --op ri lib
 rdoc --op rdoc lib
 rm -r ri/{Array,Bignum,FalseClass,Fixnum,IO,OpenSSL,String,StringIO,TrueClass,Net/cdesc-Net.ri}
+rm -r ri/Net/{SNMP,SnmpPdu}
 rm ri/created.rid
 rm ri/cache.ri
 
@@ -83,6 +84,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{ruby_ridir}/Net/BER
 %{ruby_ridir}/Net/LDAP
-# yes, it packages some snmp libs to
-%{ruby_ridir}/SNMP
-%{ruby_ridir}/SnmpPdu
